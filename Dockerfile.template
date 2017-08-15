@@ -27,8 +27,9 @@ LABEL summary=$SUMMARY \
       io.openshift.tags="database,postgresql,postgresql95,rh-postgresql95" \
       name="rhscl/postgresql-95-rhel7" \
       com.redhat.component="rh-postgresql95-docker" \
-      version="9.5" \
-      release="1"
+      version="{{ spec.version.full }}" \
+      release="1" \
+      maintainer="{{ spec.maintainer }}"
 
 EXPOSE 5432
 
